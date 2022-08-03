@@ -1,13 +1,15 @@
-function findOd(n) {
+function OddNu(n) {
+    let i;
     let temp = [];
-    let i, j;
-    for (i = 1; i <= 2 * n; i++) {
-        if (i % 2 == 0)
-            continue;
-        else
-            temp.push(i);
+    if (n <= 2) {
+        return 1
+    }
+    for (i = 1; i <= (n + 2); i++) {
+
+        if (i % 2 == 0) { continue }
+        else { temp.push(i) }
     }
     return temp.join();
 }
 
-console.log(findOd(5));
+console.log(OddNu(6));
